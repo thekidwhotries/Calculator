@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+      .box{
+        width: 400px;
+        height: 500px;
+        box-shadow: 0px 0px 20px 3px red;
+        border-radius: 20px;
+        margin: auto;
+       display: flex;
+       flex-direction: column;
+       padding: 10px;
+      }
+      h1{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      input{
+            padding: 13px;
+            margin: 10px;
+            border: none;
+           box-shadow: 0px 0px 10px 1px skyblue;
+           border-radius: 20px;
+      }
+      button{
+        padding: 30px;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .operations{
+        margin-top:30px;  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      button:hover{
+background-color: red;
+border: 2px solid black; 
+      }
+    </style>
+</head>
+<body>
+
+    <h1>Emilio's Calculator</h1>
+    <div class="box">
+        <input type="number" placeholder="Enter First Number" id="num1">
+        <input type="number" placeholder="Enter Second Number" id="num2">
+<div class="operations">
+    <button onclick="addition()">+</button>
+    <button onclick="subtraction()">-</button>
+    <button onclick="division()">/</button>
+    <button onclick="multiplication()">*</button>
+  </div>
+  <div id="show-result"></div>
+
+    </div>
+
+    
+
+<!-- Flow of Application -->
+
+<!-- 1. User is going to Enter 2 numbers 
+2. User is going to select an operation he wants to perform on those numbers.
+3. As user selects the operation , we will do the calculation and show the result in the result box. -->
+
+
+<!-- Javascript work flow -->
+<script src="./js/index.js"></script>
+</body>
+</html>
