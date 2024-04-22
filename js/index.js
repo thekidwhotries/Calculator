@@ -15,7 +15,6 @@ function subtraction() {
     console.log(result, "subtraction");
     document.getElementById('show-result').innerHTML=`<h1>subtraction of ${number1} and ${number2} is ${result}</h1>` 
 }
-
 function division() {
     var number1=parseInt(document.getElementById('num1').value);
     var number2=parseInt(document.getElementById('num2').value);
@@ -29,7 +28,7 @@ function multiplication() {
     var number2=parseInt(document.getElementById('num2').value);
     var result=number1*number2;
     console.log(result, "multiplication");
-    document.getElementById('show-result').innerHTML=`<h1>division of ${number1} and ${number2} is ${result}</h1>`
+    document.getElementById('show-result').innerHTML=`<h1>Multiplication of ${number1} and ${number2} is ${result}</h1>`
 }
 
 
